@@ -1,6 +1,6 @@
-import svelte from 'rollup-plugin-svelte';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
+import svelte from 'rollup-plugin-svelte';
 import livereload from 'rollup-plugin-livereload';
 import json from 'rollup-plugin-json';
 import { terser } from 'rollup-plugin-terser';

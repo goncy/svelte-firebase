@@ -1,6 +1,6 @@
 <script>
-  import {all} from "../stores/todos/state"
-  import {add} from "../stores/todos/actions"
+  import {all} from "../stores/todos/state";
+  import {add} from "../stores/todos/actions";
 
   import Todo from "../components/Todo.svelte";
 

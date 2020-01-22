@@ -1,7 +1,14 @@
 <script>
-  import {login} from "../stores/session/actions"
+  import {login} from "../stores/session/actions";
 </script>
 
-<button on:click={login}>
-  Signin with google
-</button>
+<button on:click={login}>Signin with google</button>
+
+<span>Sarasa</span>
+<span>Sarasa</span>
+<span>Sarasa</span>
+<span>Sarasa</span>
+<span>Sarasa</span>
+<span>Sarasa</span>
+<span>Sarasa</span>
+<span>Sarasa</span>

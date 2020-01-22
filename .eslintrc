@@ -1,20 +1,41 @@
 {
-  "root": true,
-  "parserOptions": {
-    "ecmaVersion": 2019,
-    "sourceType": "module"
-  },
+  "extends": [
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "prettier"
+  ],
   "env": {
-    "es6": true,
     "browser": true,
     "node": true
   },
-  "extends": "eslint:recommended",
-  "plugins": ["svelte3"],
-  "overrides": [
-    {
-      "files": "*.svelte",
-      "processor": "svelte3/svelte3"
+  "parserOptions": {
+    "ecmaFeatures": {
+      "modules": true
     }
-  ]
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "no-console": "warn",
+    "no-unused-vars": [
+      "warn",
+      {
+        "args": "after-used",
+        "ignoreRestSiblings": false,
+        "argsIgnorePattern": "^_$"
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 120,
+        "trailingComma": "all",
+        "tabWidth": 2,
+        "semi": true,
+        "singleQuote": false,
+        "bracketSpacing": false,
+        "arrowParens": "always"
+      }
+    ]
+  }
 }
