@@ -1,6 +1,6 @@
-import { get } from "svelte/store";
+import {get} from "svelte/store";
 
-import { database } from "../../firebase";
+import {database} from "../../firebase";
 import user from "../session/store";
 
 export default {

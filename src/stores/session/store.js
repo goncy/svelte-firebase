@@ -1,6 +1,6 @@
-import { readable } from 'svelte/store';
-import {authState} from "rxfire/auth"
-  
-import {auth} from "../../firebase"
+import {readable} from "svelte/store";
+import {authState} from "rxfire/auth";
 
-export default readable(null, (set) => authState(auth).subscribe(set))
+import {auth} from "../../firebase";
+
+export default readable(null, (set) => authState(auth).subscribe(set));
