@@ -24,4 +24,10 @@ export default {
       .collection("todos")
       .doc(id)
       .delete(),
+  onChange: (callback) =>
+    database
+      .collection("users")
+      .doc(get(user).uid)
+      .collection("todos")
+      .onSnapshot((snapshot) => callback(snapshot.docs.map((doc) => ({id: doc.id, ...doc.data()})))),
 };

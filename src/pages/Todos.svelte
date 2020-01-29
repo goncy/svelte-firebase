@@ -5,6 +5,14 @@
   import Todo from "../components/Todo.svelte";
 
   let text = "";
+
+  function handleAdd(e) {
+    e.preventDefault();
+
+    add(text);
+    
+    text = "";
+  }
 </script>
 
 <style>
@@ -14,11 +22,13 @@
 </style>
 
 <ul>
-  {#each $all as todo}
+  {#each $all as todo (todo.id)}
     <Todo {...todo} />
   {/each}
 </ul>
 
-<input bind:value={text} />
+<form on:submit={handleAdd}>
+  <input bind:value={text} />
 
-<button on:click={add}>Add Task</button>
+  <button on:click={handleAdd}>Add Task</button>
+</form>

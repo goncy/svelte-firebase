@@ -1,10 +1,14 @@
 <script>
-  import {fade, fly} from "svelte/transition";
+  import {fly} from "svelte/transition";
 
   export let text;
   export let status;
   export let remove;
   export let toggle;
+
+  export const id = null;
+
+  const animation = {x: 900, duration: 500}
 
   $: completed = status === "completed";
 </script>
@@ -16,7 +20,7 @@
   }
 </style>
 
-<li in:fly={{x: 900, duration: 500}}>
+<li in:fly={animation} out:fly={animation}>
   <span class:completed>{text}</span>
 
   {#if completed}

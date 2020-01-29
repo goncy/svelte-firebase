@@ -3,7 +3,7 @@ import firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
 
-import {FIREBASE_CREDENTIALS} from "../env"
+import {FIREBASE_CREDENTIALS} from "../env";
 
 firebase.initializeApp({
   apiKey: FIREBASE_CREDENTIALS.API_KEY,
@@ -19,7 +19,7 @@ const database = firebase.firestore();
 const auth = firebase.auth();
 const providers = {
   google: new firebase.auth.GoogleAuthProvider(),
-}
+};
 
-export { database, auth, providers };
+export {database, auth, providers};
 export default firebase;

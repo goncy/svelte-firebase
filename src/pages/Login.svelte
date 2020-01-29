@@ -3,12 +3,3 @@
 </script>
 
 <button on:click={login}>Signin with google</button>
-
-<span>Sarasa</span>
-<span>Sarasa</span>
-<span>Sarasa</span>
-<span>Sarasa</span>
-<span>Sarasa</span>
-<span>Sarasa</span>
-<span>Sarasa</span>
-<span>Sarasa</span>

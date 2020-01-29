@@ -1,24 +1,16 @@
 import {derived} from "svelte/store";
-import {collectionData} from "rxfire/firestore";
-
-import {database} from "../../firebase";
 
 import user from "../session/store";
 
 import {remove, toggle} from "./actions";
+import api from "./resources";
 
 export default derived(
   user,
   ($user, set) => {
     if (!$user) return set([]);
 
-    collectionData(
-      database
-        .collection("users")
-        .doc($user.uid)
-        .collection("todos"),
-      "id",
-    ).subscribe((todos) =>
+    api.onChange((todos) =>
       set(
         todos.map((todo) => ({
           ...todo,
