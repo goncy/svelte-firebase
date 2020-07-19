@@ -1945,9 +1945,9 @@ lodash.clone@^4.5.0:
   integrity sha1-GVhwRQ9aExkkeN9Lw9I9LeoZB7Y=
 
 lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
 long@^4.0.0:
   version "4.0.0"
@@ -2674,14 +2674,7 @@ run-async@^2.2.0:
   dependencies:
     is-promise "^2.1.0"
 
-rxfire@^3.9.8:
-  version "3.9.8"
-  resolved "https://registry.yarnpkg.com/rxfire/-/rxfire-3.9.8.tgz#84a5e67d65d87443e07ae851aaf5ad7103463325"
-  integrity sha512-HZejvq2RwkVwrN+SVBhvnRiyKOjAYBHGlCtQgVg074C+Y5GWElnchfN6YiK/UwsuaisG5cWpjutSlxwezoAE6A==
-  dependencies:
-    tslib "1.10.0"
-
-rxjs@^6.5.3, rxjs@^6.5.4:
+rxjs@^6.5.3:
   version "6.5.4"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.5.4.tgz#e0777fe0d184cec7872df147f303572d414e211c"
   integrity sha512-naMQXcgEo3csAEGvw/NydRA0fuS2nDZJiw1YUWFKU7aPPAPGZEsD4Iimit96qwCieH6y614MCLYwdkrWx7z/7Q==
