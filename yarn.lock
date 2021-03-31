@@ -2674,14 +2674,7 @@ run-async@^2.2.0:
   dependencies:
     is-promise "^2.1.0"
 
-rxfire@^3.9.8:
-  version "3.9.8"
-  resolved "https://registry.yarnpkg.com/rxfire/-/rxfire-3.9.8.tgz#84a5e67d65d87443e07ae851aaf5ad7103463325"
-  integrity sha512-HZejvq2RwkVwrN+SVBhvnRiyKOjAYBHGlCtQgVg074C+Y5GWElnchfN6YiK/UwsuaisG5cWpjutSlxwezoAE6A==
-  dependencies:
-    tslib "1.10.0"
-
-rxjs@^6.5.3, rxjs@^6.5.4:
+rxjs@^6.5.3:
   version "6.5.4"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.5.4.tgz#e0777fe0d184cec7872df147f303572d414e211c"
   integrity sha512-naMQXcgEo3csAEGvw/NydRA0fuS2nDZJiw1YUWFKU7aPPAPGZEsD4Iimit96qwCieH6y614MCLYwdkrWx7z/7Q==
@@ -3274,9 +3267,9 @@ xmlhttprequest@1.8.0:
   integrity sha1-Z/4HXFwk/vOfnWX197f+dRcZaPw=
 
 y18n@^3.2.0:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.1.tgz#6d15fba884c08679c0d77e88e7759e811e07fa41"
-  integrity sha1-bRX7qITAhnnA136I53WegR4H+kE=
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.2.tgz#85c901bd6470ce71fc4bb723ad209b70f7f28696"
+  integrity sha512-uGZHXkHnhF0XeeAPgnKfPv1bgKAYyVvmNL1xlKsPYZPaIHxGti2hHqvOCQv71XMsLxu1QjergkqogUnms5D3YQ==
 
 yallist@^3.0.0, yallist@^3.0.3:
   version "3.1.1"
